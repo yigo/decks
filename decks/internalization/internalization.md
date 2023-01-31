@@ -73,8 +73,26 @@ Hacer que el proceso sea lo mas sencillo posible.
 ![height:500](images/workflow-2.png)
 
 ---
+3. Developer actualiza diccionarios locales
 
-3. Diseño y Productro puede editar cuanto quiera los valores de los textos en el servicio de traducciones.
+```bash
+npm run translations
+```
+---
+3. Developer ocupa las llaves de traduccion en su codigo
+```js
+import { useTranslation } from 'react-i18next';
+const { t } = useTranslation(['rent.landing'])
+function MyComponent() {
+  return (
+    ...
+    {t("search.rent.welcome.text", { ns: 'rent.landing'})}
+    ...
+  )
+}
+```
+---
+4. Diseño y Productro puede editar cuanto quiera los valores de los textos en el servicio de traducciones.
 
 ![height:500](images/workflow-3.png)
 
