@@ -110,6 +110,10 @@ function MyComponent() {
 ## demo
 ---
 ## Trabajo futuro
-* integrar translations manager en backend
+* integrar translations (prioridad a discutir)
+  * me.houm.com
+  * houm.com
+  * appraiser
+  * backend
 * manejar texto con variables (ex: "Hola {name}")
 * otros?
